@@ -5,7 +5,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/divsum')
 def divisible_sum_pairs():  # put application's code here
     n = request.json['n']
     k = request.json['k']
